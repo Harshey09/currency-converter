@@ -1,0 +1,162 @@
+*  {
+
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  background-image: url('/pexels-felix-mittermeier-1146134.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #40536a;
+
+  min-height: 100vh;
+}
+
+.container h2{
+  --b: 0.1em;   /* the thickness of the line */
+  --c: white; /* the color */
+  
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.container h2:hover {
+  --_p: 100%;
+  --_s: .5s;
+}
+
+
+.container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+}
+.container h2:hover {
+
+  color:#66FCF1;
+  letter-spacing: 0.7rem;
+  transition: .3s;
+} 
+
+
+
+.container {
+
+  background-color: #1F2833;
+  border: 4px solid #66FCF1;
+  padding: 2rem;
+  min-height: 60vh;
+  width: 60vh;
+
+
+  border-radius: 1rem;
+}
+
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+form select{
+  background-color:  #C5C6C7;;
+
+}
+
+form input {
+  border: 1px solid lightgray;
+  background-color:  #C5C6C7;;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  background-color:  #C5C6C7;;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+}
+
+.msg {
+  margin: 2rem 0 2rem 0;
+}
+
+form button {
+  height: 3rem;
+  background-color: #0B0C10;
+  color: white ;
+  border: 2px solid #66FCF1;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+
+
+form button:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+form button:hover {
+  color:white;
+  box-shadow: 3px 3px 5px #66FCF1;
+  /* text-shadow: 0 0 5px #66FCF1; */
+  font-weight: 700;
+  ;
+  transition: 1s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.copyright a {
+  color:  #66FCF1;
+}
