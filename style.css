@@ -6,9 +6,7 @@
 
 body
 {
-  background-image: url('/pexels-felix-mittermeier-1146134.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   display: flex;
   justify-content: center;
   align-items: center;
